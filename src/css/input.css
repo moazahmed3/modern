@@ -1,0 +1,12 @@
+@config "../../tailwind.config.js";
+@import "tailwindcss";
+
+.row{
+    @apply flex flex-wrap
+}
+.btn{
+    @apply px-6 py-2 bg-primary border-2 text-white rounded-[10px] capitalize hover:bg-secondary cursor-pointer duration-300 block 
+}
+.container{
+    @apply px-7 md:px-15 lg:px-30 mx-auto
+}
