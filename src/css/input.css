@@ -10,3 +10,15 @@
 .container{
     @apply px-7 md:px-15 lg:px-30 mx-auto
 }
+
+.liner-hover{
+    @apply relative
+}
+.liner-hover::after {
+  content: "";
+  @apply absolute bottom-[-5px] left-0 h-0.5 w-0 bg-slate-400 transition-all duration-300;
+}
+
+.liner-hover:hover::after {
+  @apply w-full;
+}
